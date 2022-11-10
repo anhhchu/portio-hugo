@@ -140,15 +140,18 @@ $(document).ready(function () {
   // Testimonial slider
   $(".testimonial__slider").slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    swipe: true,
+    fade: true,
+    // adaptiveHeight: true,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

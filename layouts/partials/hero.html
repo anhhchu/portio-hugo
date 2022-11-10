@@ -31,8 +31,14 @@
             <span class="top-title pre-line">{{ .topTitle }}</span>
             {{ .content | markdownify }}
           </div>
-          <a type="button" class="btn btn-lg btn-primary btn-zoom"
-            href="{{ .buttonURL | absURL }}">{{ .buttonName }}</a>
+          <!-- <a type="button" class="btn btn-lg btn-primary btn-zoom"
+            href="{{ .buttonURL | absURL }}">{{ .buttonName }}</a> -->
+          <div>
+            <a class="btn btn-primary mr-3 btn-zoom"
+                href="{{ .button1URL | absURL }}" >{{ .button1Name }}</a>
+            <a class="btn btn-outline-primary btn-zoom" href="{{ .button2URL | absURL }}" target="_blank">
+                {{ .button2Name }} </a>
+          </div>
         </div>
       </div>
       <div class="col-lg-6">

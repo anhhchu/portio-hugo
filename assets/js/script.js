@@ -146,8 +146,8 @@ $(document).ready(function () {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    swipe: true,
-    fade: true,
+    // swipe: true,
+    // fade: true,
     // adaptiveHeight: true,
     responsive: [
       {

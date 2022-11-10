@@ -15,7 +15,7 @@
                 <div class="about_content">
                     <div class="about_content-thumb">
                         <div class="about-svg">
-                            <img src="images/hero/figure-svg.svg" alt="figure-svg">
+                            <img src="images/hero/hero-background-svg.svg" alt="figure-svg">
                         </div>
                         <div class="about_content-thumb-image">
                             <img src="{{ .image | absURL }}" alt="about-img"
@@ -29,8 +29,8 @@
                                 <defs>
                                     <linearGradient id="c" x1="0.929" y1="0.111" x2="0.263" y2="0.935"
                                         gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#f1f6f9" />
-                                        <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+                                        <stop offset="0" stop-color="#f4cccc" />
+                                        <stop offset="1" stop-color="#f4cccc" stop-opacity="0" />
                                     </linearGradient>
                                 </defs>
                                 <g data-name="blob-shape (3)">
@@ -42,12 +42,12 @@
                         <div class="mb-4 text-light">
                             {{ .content | markdownify}}
                         </div>
-                        <div>
+                        <!-- <div>
                             <a class="btn btn-primary mr-3 btn-zoom"
                                 href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
                             <a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
                                 {{ .button2Name }} </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

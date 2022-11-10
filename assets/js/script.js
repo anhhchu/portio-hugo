@@ -143,7 +143,7 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -251,7 +251,7 @@ function initialize() {
       elementType: "geometry.fill",
       stylers: [
         {
-          color: "#ffffff",
+          color: "#fce5cd",
         },
         {
           lightness: 17,
@@ -263,7 +263,7 @@ function initialize() {
       elementType: "geometry.stroke",
       stylers: [
         {
-          color: "#ffffff",
+          color: "#fce5cd",
         },
         {
           lightness: 29,
@@ -278,7 +278,7 @@ function initialize() {
       elementType: "geometry",
       stylers: [
         {
-          color: "#ffffff",
+          color: "#fce5cd",
         },
         {
           lightness: 18,
@@ -290,7 +290,7 @@ function initialize() {
       elementType: "geometry",
       stylers: [
         {
-          color: "#ffffff",
+          color: "#fce5cd",
         },
         {
           lightness: 16,
@@ -328,7 +328,7 @@ function initialize() {
           visibility: "on",
         },
         {
-          color: "#ffffff",
+          color: "#fce5cd",
         },
         {
           lightness: 16,

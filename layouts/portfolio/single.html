@@ -2,14 +2,14 @@
 
 <section class="section case-details">
   <div class="svg-img">
-    <img src="{{ "images/hero/figure-svg.svg" | absURL }}" alt="" />
+    <img src="{{ "images/hero/hero-background-svg.svg" | absURL }}" alt="" />
   </div>
   <div class="animate-shape">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
       <defs>
         <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#f1f6f9" />
-          <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+          <stop offset="0" stop-color="#f4cccc" />
+          <stop offset="1" stop-color="#f4cccc" stop-opacity="0" />
         </linearGradient>
       </defs>
       <g data-name="blob-shape (3)">
@@ -30,7 +30,7 @@
         <p>
           {{ .Params.shortDescription }}
         </p>
-        <div class="case-details-info">
+        <!-- <div class="case-details-info">
           <div class="case-details-info-item">
             <h5 class="text-light">Client</h5>
             <p>{{ .Params.client }}</p>
@@ -43,7 +43,7 @@
             <h5>Date</h5>
             <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
-        </div>
+        </div> -->
         <div class="row mb-5">
           <div class="col-lg-6">
             <div class="case-details-service">

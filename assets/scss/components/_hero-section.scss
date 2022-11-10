@@ -130,7 +130,7 @@
         transform: translate(-50%, -50%);
         height: 60px;
         width: 60px;
-        background: #ffffff;
+        background: #fce5cd;
         border-radius: 50%;
         z-index: 2;
         transition: all 0.3s ease;
@@ -149,7 +149,7 @@
           background-color: $primary;
           svg {
             path {
-              fill: #ffffff;
+              fill: #fce5cd;
             }
           }
         }

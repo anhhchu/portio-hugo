@@ -145,7 +145,7 @@ $(document).ready(function () {
     dots: true,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     // swipe: true,
     // fade: true,
     // adaptiveHeight: true,

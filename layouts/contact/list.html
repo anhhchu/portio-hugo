@@ -36,7 +36,7 @@
   </div>
 </header>
 
-<!-- {{ $address := .Site.Params.address }}
+{{ $address := .Site.Params.address }}
 <section class="section contact__info">
   <div class="container">
     <div class="row">
@@ -54,7 +54,7 @@
               <img src="{{ "images/contact/location.svg" | absURL }}" alt="location" />
             </div>
           </div>
-          <h4>Office Address</h4>
+          <h4>Location</h4>
           <p>
             {{ $address.address }}
           </p>
@@ -74,10 +74,8 @@
               <img src="{{ "images/contact/phone.svg" | absURL }}" alt="phone" />
             </div>
           </div>
-          <h4>Phone & Email</h4>
-          <p>{{ $address.phone }}<br>
-            <a href="mailto:{{ $address.email }}">{{ $address.email }}</a>
-          </p>
+          <h4>LinkedIn</h4>
+          <p>{{ $address.linkedin }}</p>
 
         </div>
       </div>
@@ -95,15 +93,15 @@
               <img src="{{ "images/contact/time.svg" | absURL }}" alt="time" />
             </div>
           </div>
-          <h4>Working Hours</h4>
+          <h4>Github</h4>
           <p>
-            {{ $address.openingHours }}
+            {{ $address.github }}
           </p>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <section class="contact-form">
   <div class="container">
@@ -113,7 +111,7 @@
           <h3>Contact Form</h3>
         </div>
         <div class="contact-form-input">
-          <form id="contact-form" action="{{ .Site.Params.fabformURL }}" method="POST">
+          <form id="contact-form" action="{{ .Site.Params.getformURL }}" method="POST">
 
             <div class="form-row">
 
@@ -142,7 +140,7 @@
             <p id="contact-form-status" class="mt-3"></p>
           </form>
           <p class="contact-form-generator">
-            <strong>** </strong><a href="https://fabform.io/" target="_blank">Static website forms</a>
+            <strong>** </strong><a href="https://getform.io/" target="_blank">Static website forms</a>
           </p>
           <!-- <form>
             <div class="form-row">

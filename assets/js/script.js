@@ -141,11 +141,11 @@ $(document).ready(function () {
   $(".testimonial__slider").slick({
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     dots: true,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     // swipe: true,
     // fade: true,
     // adaptiveHeight: true,

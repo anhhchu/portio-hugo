@@ -1,5 +1,5 @@
 .testimonial {
-  background: #f4cccc;
+  background: #e5c9d7;
   position: relative;
   padding: 170px 0 150px 0;
   @include desktop {
@@ -57,7 +57,7 @@
         position: relative;
         span {
           font-weight: bold;
-          color: #ea9999;
+          color: #d5a6bd;
         }
         &:before {
           position: absolute;
@@ -67,7 +67,7 @@
           left: -35px;
           top: 50%;
           transform: translateY(-50%);
-          background: #ea9999;
+          background: #d5a6bd;
         }
       }
     }

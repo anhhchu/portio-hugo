@@ -27,9 +27,10 @@
 			<div class="col-12 text-center">
 				<h3 class="breadCrumb__title">{{ .Title }}</h3>
 				<nav aria-label="breadcrumb" class="d-flex justify-content-center">
-					<ol class="breadcrumb align-items-center">
+					<u><ol class="breadcrumb align-items-center"></u>
 						<li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+						<!-- <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li> -->
+						<li class="breadcrumb-item"><a href="{{ .Site.BaseURL }}/tags">View All Tags</a></li>
 					</ol>
 				</nav>
 			</div>

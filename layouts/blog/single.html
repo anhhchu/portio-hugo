@@ -24,18 +24,17 @@
         <i class="fa fa-clock-o"></i>
         {{ .ReadingTime }} mins read
       </li>
+      <li>
+        <i class="fa fa-user"></i>
+        {{ .Params.author }}
+      </li>
+    </ul>
+    <ul class="post-meta">
+      </li>
       {{ if .Params.tags }}
       <li>
         <i class="fa fa-tag"></i>
         {{ range (.GetTerms "tags") }}
-          <a class="text-lowercase" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-        {{ end }}
-      </li>
-      {{ end }}
-      {{ if .Params.categories }}
-      <li>
-        <i class="fa fa-folder-open"></i>
-        {{ range (.GetTerms "categories") }}
           <a class="text-lowercase" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
         {{ end }}
       </li>

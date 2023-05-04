@@ -2,7 +2,7 @@
 
 <section class="section case-details">
   <div class="svg-img">
-    <img src="{{ "images/hero/hero-background-svg.svg" | absURL }}" alt="" />
+    <img src="{{ "images/hero/hero-background-svg.svg" | absURL }}" alt="hero-background-svg" />
   </div>
   <div class="animate-shape">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
@@ -25,10 +25,12 @@
     <div class="row mb-5">
       <div class="col-lg-10 offset-lg-1 text-left">
         <div class="case-details-title">
-          <h1>{{ .Title }}</h1>
+          <h1>
+            <center>{{ .Title }}</center>
+          </h1>
         </div>
         <div class="case-details-thumb mb-5">
-          <img src="{{ .Params.thumbnail | absURL }}" alt="case-details" />
+          <center><img src="{{ .Params.thumbnail | absURL }}" alt="case-details" /></center>
         </div>
         <p>
           {{ .Params.shortDescription }}
@@ -47,7 +49,7 @@
             <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
           </div>
         </div> -->
-        <div class="row mb-5">
+        <!-- <div class="row mb-5">
           <div class="col-lg-6">
             <div class="case-details-service">
               <h3>Problem Statement</h3>
@@ -64,7 +66,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         {{ .Content }}
       </div>
     </div>
@@ -83,8 +85,8 @@
             </div>
             <div class="content">
               <span class="small">Prev case</span>
-              <h5 class="title"><a class="text-dark"
-                  href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></h5>
+              <h5 class="title"><a class="text-dark" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title
+                  }}</a></h5>
             </div>
           </div>
           {{ end }}
@@ -92,16 +94,10 @@
             {{ $url := printf "%s" .Permalink | absLangURL }}
             <ul class="unstyle-list big">
               <li>
-                <a href=" https://www.facebook.com/sharer/sharer.php?u={{ $url }}"><i
-                    class="fa fa-facebook-official btn-zoom"></i></a>
+                <a href="https://github.com/anhhchu" target="_blank"><i class="fa fa-github btn-zoom"></i></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url }}"><i
-                    class="fa fa-linkedin-square btn-zoom"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/intent/tweet?&url={{ $url }}"><i
-                    class="fa fa-twitter-square btn-zoom"></i></a>
+                <a href="https://www.linkedin.com/in/anhhchu/" target="_"><i class="fa fa-linkedin btn-zoom"></i></a>
               </li>
             </ul>
           </div>

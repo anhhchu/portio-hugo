@@ -1,5 +1,5 @@
 .testimonial {
-  background: #e5c9d7;
+  background: $black;
   position: relative;
   padding: 170px 0 150px 0;
   @include desktop {
@@ -14,7 +14,7 @@
       height: 100%;
       width: 100%;
       path {
-        fill: $white;
+        fill: #0E0D29;
       }
     }
     @include mobile-xs {
@@ -23,7 +23,7 @@
   }
   &__slider {
     &_item {
-      background: $white;
+      background: #0E0D29;
       border-radius: 20px;
       padding: 60px 50px;
       margin: 30px 25px 60px;
@@ -38,9 +38,9 @@
           list-style: none;
           display: inline-block;
           i {
-            color: #ffc219;
+            color: #0E0D29;
             &.inactive {
-              color: #c2c8cc;
+              color: $white;
             }
           }
         }
@@ -51,13 +51,13 @@
       }
       &-author {
         margin: 0 0 0 35px;
-        color: #7e7e8a;
+        color: $white;
         font-size: 16px;
         line-height: 1;
         position: relative;
         span {
           font-weight: bold;
-          color: #d5a6bd;
+          color: #38BDF8;
         }
         &:before {
           position: absolute;
@@ -67,7 +67,7 @@
           left: -35px;
           top: 50%;
           transform: translateY(-50%);
-          background: #d5a6bd;
+          background: $white;
         }
       }
     }
@@ -89,7 +89,7 @@
           cursor: pointer;
           height: 100%;
           width: 100%;
-          background: #c2c8cc;
+          background: $white;
           border-radius: 50%;
           transition: all 0.3s ease;
           display: block;
@@ -107,7 +107,7 @@
           width: 10px;
           border-radius: 50%;
           button {
-            background-color: $primary;
+            background-color: #0E0D29;
           }
         }
       }

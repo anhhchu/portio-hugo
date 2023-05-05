@@ -7,7 +7,7 @@
         padding: 100px 0;
     }
     &__background{
-        background: #d5a6bd;
+        background: linear-gradient(to bottom right, #0E172A, #363C4E);
         height: 100%;
         width: 100%;
         position: absolute;
@@ -32,7 +32,7 @@
     }
     &__education{
         &_item{
-            background: $white;
+            background: #171037;
             padding: 30px;
             border-radius: 20px;
             margin-bottom: 30px;

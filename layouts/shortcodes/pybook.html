@@ -1,32 +1,15 @@
 <!--pybook.html--> 
-<h6>
+<!-- <h6>
     <center><a href="/pybooks/{{ index .Params 0 }}.html" target="_blank" style="display: inline-block;">View Fullscreen</a> |
     <a href="{{ index .Params 2 }}" target="_blank"  style="display: inline-block;">View Github</a></center>
+</h6> -->
+
+<h6 style="display: flex; justify-content: center;">
+  <a href="/pybooks/{{ index .Params 0 }}.html" target="_blank" style="margin-right: 10px; background-color: #5E3E7B; color: white; border-radius: 5px; padding: 8px 20px; text-decoration: none;">View Fullscreen 🔗</a>
+  <a href="{{ index .Params 2 }}" target="_blank" style="background-color: #5E3E7B; color: white; border-radius: 5px; padding: 8px 20px; text-decoration: none;">View on Github  </a>
 </h6>
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
 
-<!-- <h6>
-    <center>
-      <button class="fullscreen-btn">
-        View Fullscreen
-      </button>
-      <a href="{{ index .Params 2 }}" target="_blank">
-        <i class="fab fa-github github-icon"></i>
-      </a>
-    </center>
-  </h6> -->
 
  <iframe src="/pybooks/{{ index .Params 0 }}.html"
 style="height:{{ index .Params 1}}px;width:100%;border:none;overflow:auto;" scrolling="yes"></iframe>
-
-<!-- .fullscreen-btn {
-    color: #fff;
-    background-color: #bc7296;
-    border-color: #bc7296;
-  }
-  
-  .github-icon {
-    font-size: 20px;
-    color: #333;
-  } -->
-  

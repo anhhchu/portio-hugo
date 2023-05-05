@@ -1686,12 +1686,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #2a2a2b;
+  border: 1px solid #dee2e6;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #2a2a2b;
+  border: 1px solid #dee2e6;
 }
 
 .table-bordered thead th,
@@ -1850,7 +1850,7 @@ pre code {
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #fdfdfe;
+  background-color: #fff;
 }
 
 .table-light th,
@@ -1872,23 +1872,23 @@ pre code {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #c6c8ca;
+  background-color: #23263B;
 }
 
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #95999c;
+  border-color: #0E172A;
 }
 
 .table-hover .table-dark:hover {
-  background-color: #b9bbbe;
+  background-color: #0E172A;
 }
 
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #b9bbbe;
+  background-color: #0E172A;
 }
 
 .table-active,
@@ -1908,19 +1908,19 @@ pre code {
 
 .table .thead-dark th {
   color: #fff;
-  background-color: #343a40;
+  background-color: #23263B;
   border-color: #454d55;
 }
 
 .table .thead-light th {
   color: #495057;
-  background-color: #e9ecef;
+  background-color: #23263B;
   border-color: #dee2e6;
 }
 
 .table-dark {
   color: #fff;
-  background-color: #343a40;
+  background-color: #23263B;
 }
 
 .table-dark th,
@@ -1931,14 +1931,15 @@ pre code {
 
 .table-dark.table-bordered {
   border: 0;
+  background-color: #23263B;
 }
 
 .table-dark.table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #23263B;
 }
 
 .table-dark.table-hover tbody tr:hover {
-  color: #fff;
+  color: #0E172A;
   background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -3213,7 +3214,7 @@ input[type="button"].btn-block {
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #23263B;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3675,7 +3676,7 @@ input[type="button"].btn-block {
   color: #495057;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
+  background-color: #23263B;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }

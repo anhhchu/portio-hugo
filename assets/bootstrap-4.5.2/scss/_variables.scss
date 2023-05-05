@@ -13,9 +13,9 @@ $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$gray-800: #c4b1e1 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #23263B !default;
 
 $grays: () !default;
 $grays: map-merge(
@@ -95,7 +95,7 @@ $theme-color-interval:      8% !default;
 $yiq-contrasted-threshold:  150 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark:             $gray-900 !default;
+$yiq-text-dark:             $gray-800 !default;
 $yiq-text-light:            $white !default;
 
 // Characters which are escaped by the escape-svg function
@@ -165,7 +165,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $black!default;
 $body-color:                $gray-900 !default;
 
 
@@ -339,7 +339,7 @@ $nested-kbd-font-weight:      $font-weight-bold !default;
 
 $list-inline-padding:         .5rem !default;
 
-$mark-bg:                     #fcf8e3 !default;
+$mark-bg:                     #f4f4f0 !default;
 
 $hr-margin-y:                 $spacer !default;
 
@@ -365,7 +365,7 @@ $table-head-bg:               $gray-200 !default;
 $table-head-color:            $gray-700 !default;
 
 $table-dark-color:            $white !default;
-$table-dark-bg:               $gray-800 !default;
+$table-dark-bg:               $gray-200 !default;
 $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-color:      $table-dark-color !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
@@ -580,7 +580,7 @@ $custom-select-disabled-color:      $gray-600 !default;
 $custom-select-bg:                  $input-bg !default;
 $custom-select-disabled-bg:         $gray-200 !default;
 $custom-select-bg-size:             8px 10px !default; // In pixels because image dimensions
-$custom-select-indicator-color:     $gray-800 !default;
+$custom-select-indicator-color:     $purple !default;
 $custom-select-indicator:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='#{$custom-select-indicator-color}' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") !default;
 $custom-select-background:          escape-svg($custom-select-indicator) no-repeat right $custom-select-padding-x center / $custom-select-bg-size !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
 

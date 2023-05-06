@@ -37,17 +37,18 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="hero_figure">
-          <!-- <div class="figure-svg">
+        <img src="{{ .image | absURL }}" alt="hero-image" />
+        <!-- <div class="hero_figure">
+         <div class="figure-svg">
             <img src="images/hero/hero-background-svg.svg" alt="figure-svg" />
-          </div> -->
-          <!-- <img src="{{ .image | absURL }}" alt="hero-image" style='
+          </div> 
+          <img src="{{ .image | absURL }}" alt="hero-image" style='
                   -webkit-mask: url({{"images/hero/hero-mask-svg.png" | absURL }});
                   -webkit-mask-repeat: no-repeat;
                   -webkit-mask-size: contain;
                   -webkit-mask-position: center center;
-                ' /> -->
-            <img src="{{ .image | absURL }}" alt="hero-image" />
+                ' />
+           
           {{ if .videoURL }}
           <div class="hero_figure-popup">
             <div class="thumb">
@@ -62,7 +63,7 @@
             </a>
           </div>
           {{ end }}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

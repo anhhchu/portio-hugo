@@ -15,4 +15,4 @@ Before opening:
 Feature requests must include:
 
 - As much detail as possible for what we should add and why it's important to Bootstrap
-- Relevant links to prior art, screenshots, or live demos whenever possible
+- Relevant links to prior art, inpost, or live demos whenever possible

@@ -1,6 +1,13 @@
 <div class="image">
+    <style>
+      .img-responsive {
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+    </style>
     <p>
-    <center><img src="{{ .Get "image" | absURL}}"  alt="blog-img" width="{{ .Get "width"  }} " height="{{ .Get "height" }}"></center>
-    <style>@media screen and (min-width: 300px) and (max-width: 445px) { #slide-window { max-width: 350px; } }</style>
-    <p>
-</div>
+      <center><img src="{{ .Get "image" | absURL}}"  alt="blog-img" class="img-responsive"></center>
+    </p>
+  </div>
+  

@@ -1,5 +1,100 @@
 
-<body>
+<!-- <body>
 	<div class="gallery">
 		<img src="/Users/anhhoang.chu/Documents/anhcodes/themes/portio/layouts/shortcodes/gallery.html" alt="Image 1">
-</body>
+</body> -->
+
+<!-- {{ $imageDirectory := .Get "imageDirectory" }}
+
+<div class="collage-container">
+  {{ $images := getJSON $imageDirectory }}
+  {{ range $index, $image := $images }}
+    <div class="collage-image">
+      <div class="image">
+        <p>
+          <center>
+            <img src="{{ $image | absURL }}" alt="blog-img" class="img-responsive" onclick="openModal(this)">
+          </center>
+        </p>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+<script>
+  function openModal(img) {
+    var modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = '<div class="modal-content"><img src="' + img.src + '"></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener('click', closeModal);
+  }
+
+  function closeModal(event) {
+    if (event.target.classList.contains('modal')) {
+      document.body.removeChild(event.target);
+    }
+  }
+</script> -->
+
+{{ $imageDirectory := .Get "imageDirectory" }}
+
+<style>
+  .img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+    /* width: 512px;
+    height: 512px; */
+    object-fit: contain;
+  }
+
+  .collage-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
+
+  .collage-image {
+    width: calc(50% - 10px); /* Adjust as needed */
+    margin-bottom: 0px; /* Adjust as needed */
+    box-sizing: border-box;
+    /* padding: 5px; */
+  }
+</style>
+
+<div class="collage-container">
+  {{ $images := getJSON $imageDirectory }}
+  {{ range $index, $image := $images }}
+    <div class="collage-image">
+      <div class="image">
+        <p>
+          <center>
+            <img src="{{ $image | absURL }}" alt="blog-img" class="img-responsive" onclick="openModal(this)">
+          </center>
+        </p>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+<script>
+  function openModal(img) {
+    var modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = '<div class="modal-content"><img src="' + img.src + '"></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener('click', closeModal);
+  }
+
+  function closeModal(event) {
+    if (event.target.classList.contains('modal')) {
+      document.body.removeChild(event.target);
+    }
+  }
+</script>
+
+
+
+
